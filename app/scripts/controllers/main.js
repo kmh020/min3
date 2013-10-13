@@ -5,6 +5,21 @@ angular.module('min3App')
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
-      'Karma'
+      'Karma',
+      'minhyung'
     ];
   });
+
+
+angular.module('min3App')
+  .controller('MainCtrl3', function ($scope) {
+    $scope.awesomeThings = [
+      'Karma',
+      'Karma',
+      'Karma',
+      'Karma',
+      'minhyung'
+    ];
+  });
+
+

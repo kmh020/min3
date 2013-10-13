@@ -1,9 +1,26 @@
 <div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
+  <h1>'Allo, 'Allo!333</h1>
   <p>You now have</p>
   <ul>
       <li ng-repeat="thing in awesomeThings">{{thing}}</li>
   </ul>
+  <div ng-controller = "MainCtrl2">
+  	{{text}}
+  	<p class="username"> Welcome, {{user.details.username}}</p>
+  	<p class="id"> User ID: {{user.details.id}}</p>
+  </div>
+  <ul ng-controller = "MainCtrl3">
+      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+  </ul>
   <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+  <h3>Enjoy coding! - Yeoman!!!!!</h3>
+  <a custom-button>Click me</a>
+
+  <div ng-controller="MainCtrl5">
+    <p>No filter: {{ greeting }}</p>
+    <p>Reverse: {{ greeting | reverse }}</p>
+    <li ng-repeat="number in numbers | filter:greaterThanNum">
+  {{ number }}
+	</li>
+  </div>	
 </div>
